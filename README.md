@@ -75,6 +75,8 @@ The Power BI dashboard displays:
 * **Orchestration:** Fabric Data Factory Pipelines
 * **BI / Analytics:** Power BI (Direct Lake Mode)
 
+---
+
 ## 🛠️ Workflow (Images)
 
 ### Workspace
