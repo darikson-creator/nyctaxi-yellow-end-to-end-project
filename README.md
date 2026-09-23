@@ -74,3 +74,8 @@ The Power BI dashboard displays:
 * **Compute / Warehouse:** Fabric Data Warehouse (T-SQL Stored Procedures)
 * **Orchestration:** Fabric Data Factory Pipelines
 * **BI / Analytics:** Power BI (Direct Lake Mode)
+
+## 🛠️ Workflow (Images)
+ ![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/91cb5fabf2fa5c8e926dc282241ca3e0949f9188/1.%20Workspace.png)
+
+
