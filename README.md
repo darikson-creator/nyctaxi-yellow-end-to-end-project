@@ -76,6 +76,24 @@ The Power BI dashboard displays:
 * **BI / Analytics:** Power BI (Direct Lake Mode)
 
 ## 🛠️ Workflow (Images)
+
+###Workspace
  ![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/91cb5fabf2fa5c8e926dc282241ca3e0949f9188/1.%20Workspace.png)
+###Lakehouse
+ ![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/2.%20Lakehouse.png)
+###Warehouse
+ ![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/3.%20warehouse.png)
+###Pipelines
+ ![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/4.%20Pipelines.png)
+###Dataflow-Gen2
+![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/5.%20Dataflow%20Gen2.png)
+###Staging Pipeline
+![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/6.%20Staging%20Pipeline.png)
+###Presentation Pipeline
+![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/7.%20Presentation%20Pipeline.png)
+###Orchestration Pipeline
+![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/8.%20Orchestrate%20Pipeline.png)
+###PBI Report
+![image alt](https://github.com/darikson-creator/nyctaxi-yellow-end-to-end-project/blob/515a4ac9816460a394aa5b40715ee43acc34d5c4/9.%20Report.png)
 
 
