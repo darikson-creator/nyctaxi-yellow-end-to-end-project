@@ -1,0 +1,141 @@
+table nyctaxi_yellow
+	lineageTag: 67201c65-ed14-4dab-88ca-1429479b8f5f
+	sourceLineageTag: [dbo].[nyctaxi_yellow]
+
+	measure 'Total Rides' = COUNTROWS('nyctaxi_yellow')
+		formatString: 0
+		lineageTag: dc0d2841-ed36-4f42-9920-7c1c695f2312
+
+		changedProperty = Name
+
+	measure 'Total Revenue' = SUM('nyctaxi_yellow'[total_amount])
+		lineageTag: 0b958a7b-9dc9-466a-a5e6-2e64fdc65de5
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vendor
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: c4faaf03-28c5-446e-afee-727c92c47be7
+		sourceLineageTag: vendor
+		summarizeBy: none
+		sourceColumn: vendor
+
+		annotation SummarizationSetBy = Automatic
+
+	column tpep_pickup_datetime
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 9a5f29bb-55d8-441b-97c0-b51de35ce9d8
+		sourceLineageTag: tpep_pickup_datetime
+		summarizeBy: none
+		sourceColumn: tpep_pickup_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column tpep_dropoff_datetime
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 9c671e3f-73db-4d1e-9050-20cb49c33b94
+		sourceLineageTag: tpep_dropoff_datetime
+		summarizeBy: none
+		sourceColumn: tpep_dropoff_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column pu_borough
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 38c21b5d-b929-4d2c-84b1-2edc83877310
+		sourceLineageTag: pu_borough
+		summarizeBy: none
+		sourceColumn: pu_borough
+
+		annotation SummarizationSetBy = Automatic
+
+	column pu_zone
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 85ad56da-9dc9-4b6b-a380-2e939c9ff3b5
+		sourceLineageTag: pu_zone
+		summarizeBy: none
+		sourceColumn: pu_zone
+
+		annotation SummarizationSetBy = Automatic
+
+	column do_borough
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: a2598bfd-f5b6-4967-9045-dc1db4750939
+		sourceLineageTag: do_borough
+		summarizeBy: none
+		sourceColumn: do_borough
+
+		annotation SummarizationSetBy = Automatic
+
+	column do_zone
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: f13049a3-9e53-4998-8a0f-521830ca07e0
+		sourceLineageTag: do_zone
+		summarizeBy: none
+		sourceColumn: do_zone
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_method
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 52cfcd63-84cc-49ea-80eb-de13ec87181a
+		sourceLineageTag: payment_method
+		summarizeBy: none
+		sourceColumn: payment_method
+
+		annotation SummarizationSetBy = Automatic
+
+	column passenger_count
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ed873245-7867-45b0-834c-bf5152e48759
+		sourceLineageTag: passenger_count
+		summarizeBy: sum
+		sourceColumn: passenger_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_distance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4130b12c-af14-4d14-a818-a827df75272a
+		sourceLineageTag: trip_distance
+		summarizeBy: sum
+		sourceColumn: trip_distance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_amount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1ec34087-06a8-4a09-8d31-c96893565bda
+		sourceLineageTag: total_amount
+		summarizeBy: sum
+		sourceColumn: total_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition nyctaxi_yellow = entity
+		mode: directLake
+		source
+			entityName: nyctaxi_yellow
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Semantic_model_nyctaxi"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "56fc1572-c27a-86a5-4766-c6e275709f27"
+  }
+}

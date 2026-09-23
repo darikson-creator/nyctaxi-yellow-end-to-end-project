@@ -1,0 +1,40 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "df_press",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "stg nyctaxi_yellow": {
+      "queryId": "d5a3e4a5-6da3-4c55-80bd-7f9012aed248",
+      "queryName": "stg nyctaxi_yellow"
+    },
+    "stg taxi_zone_lookup": {
+      "queryId": "0d4a4243-9a25-468d-8031-d3ee5416c0e4",
+      "queryName": "stg taxi_zone_lookup"
+    },
+    "Merge": {
+      "queryId": "28afec64-c9fe-4362-879f-0ae0a01b14d9",
+      "queryName": "Merge"
+    },
+    "Merge (2)": {
+      "queryId": "1fd49214-b46a-4a59-888e-6c7f5e1e1377",
+      "queryName": "Merge (2)"
+    },
+    "Merge (2)_DataDestination": {
+      "queryId": "f2ebf325-6bb5-4823-9769-9565e8d990e6",
+      "queryName": "Merge (2)_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"9675a16d-0036-43a8-bf3a-a35d75d3d4e1\",\"DatasourceId\":\"afcdd16f-0ba4-4af4-959f-f358b92660ee\"}"
+    }
+  ]
+}
